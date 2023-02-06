@@ -1,0 +1,20 @@
+rails new teddyvm -d postgresql -c tailwind 
+bin/importmap pin three
+rails db:create
+rails g controller landing index #landing a la place home car solidius utilise home
+rails g controller cookies index policy
+rails g controller ageGates index
+mkdir partial
+touch partial/_navbar.html.erb
+touch partial/_footer.html.erb
+touch partial/_prevention.html.erb
+rails g stimulus threejs
+rails g stimulus modal
+rails g stimulus menu
+
+bundle add solidus
+bin/rails g solidus:install
+-- Y  |  paypal  | solidus_starter_frontend
+bundle add solidus_stripe
+bundle exec rails g solibindus_stripe:install
+

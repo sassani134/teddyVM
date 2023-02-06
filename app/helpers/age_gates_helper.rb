@@ -1,0 +1,2 @@
+module AgeGatesHelper
+end

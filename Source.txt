@@ -1,0 +1,37 @@
+--treejs rails
+https://github.com/Deanout/three_on_rails
+
+-- cookies
+https://www.youtube.com/watch?v=CXe5WvheO48&t
+https://www.youtube.com/watch?v=Udkil4287pM
+
+--threeJs transparence
+https://stackoverflow.com/questions/20495302/transparent-background-with-three-js
+
+--Canvas responsive
+https://stackoverflow.com/questions/34772957/how-to-make-canvas-responsive
+https://tailwindcss.com/docs/adding-custom-styles#adding-base-styles
+
+--threeJs custom model
+https://threejs.org/docs/#manual/en/introduction/Loading-3D-models
+
+--transition menu modals 
+https://boringrails.com/articles/tailwind-style-css-transitions-with-stimulusjs/?utm_source=pocket_reader
+https://www.bearer.com/blog/how-to-build-modals-with-hotwire-turbo-frames-stimulusjs
+
+--Cookie Consent Banner In Ruby On Rails 7 Ft. Turbo
+https://youtu.be/CXe5WvheO48
+https://youtu.be/Udkil4287pM
+
+-- Google analytics
+https://jeromezng.com/work/research-and-development/growth/analytics/how-to-add-google-analytics-to-rails
+https://youtu.be/Udkil4287pM?t=550
+
+-- Email
+https://levelup.gitconnected.com/your-ultimate-guide-to-sending-email-in-rails-7-d743cdad88b
+
+--
+https://daily-dev-tips.com/posts/center-elements-with-tailwind-css/
+
+--How to importmap an other thing from threejs
+https://youtu.be/FKDCflZde-M?t=1358
