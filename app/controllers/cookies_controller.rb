@@ -1,7 +1,7 @@
-class CookiesController < ApplicationController
-  def index
-  end
+# frozen_string_literal: true
 
-  def policy
-  end
+class CookiesController < ApplicationController
+  def index; end
+
+  def policy; end
 end

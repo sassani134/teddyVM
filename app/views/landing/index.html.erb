@@ -1,4 +1,182 @@
-<div>
-  <h1 class="font-bold text-4xl">Landing#index</h1>
-  <p>Find me in app/views/landing/index.html.erb</p>
+<div class="snap-y snap-mandatory h-screen overflow-scroll scroll-smooth">
+    <div 
+    class="  snap-start bg-black relative grid place-items-center h-screen"
+    id="first"
+    >  
+
+        <%= video_tag("teddy", autoplay: :autoplay, loop: :loop, muted: :muted , class:"absolute aspect-video")%>
+        <!--
+        <video autoplay loop muted class="absolute w-auto min-w-full min-h-full max-w-none">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4" type="video/mp4" />Your browser does not support the video tag.
+        </video>
+        -->
+        <!--<div class="absolute w-full h-full bg-black opacity-50"></div>-->
+<section class="z-10">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="max-w-screen-md">
+            <%# <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gold-500"> TEDDY FEAR</h2> %>
+            <%#= image_tag("LOGO_G400_SS_FOND", class: " mb-4  self-center") %>
+            <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
+                <span class="text-gold-600 text-5xl"><h1>Teddy Fear</h1><span>
+                <a href="#" class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-black bg-gold-400  rounded-lg hover:text-white hover:bg-black focus:ring-4 focus:ring-red-300 ">
+                    en savoir plus
+                </a>
+                <a href="#" class=" inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-black border  bg-gold-400 border-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100">
+                    Boutique
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <div class="animate-bounce bg-white dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center">
+        <svg class="w-6 h-6 text-violet-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+        </div>
+
+            <%#= image_tag("TAGLINE", class: " scale-50 md:scale-[0.2]") %>
+    
+    </div>
+
+    <div class="snap-start bg-black w-screen h-screen flex items-center justify-center  text-white"
+    id="second"
+    >
+    <!--
+        <p>
+            <h2>Teddy Fear</h2> est un hard seltzer soit une boisson pétrillante aromatisée et alcoolisé
+            a base fruit. Produit en France,Teddy Fear présente un degré de 6.8% d'alcool et se consomme très frais a la bouteille
+        <p>
+    -->
+    <section class="bg-white dark:bg-gray-900">
+    <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">We didn't reinvent the wheel</h2>
+            <p class="mb-4">We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need.</p>
+            <p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-8">
+            <img class="w-full rounded-lg" src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80" alt="office content 1">
+            <img class="mt-4 w-full lg:mt-10 rounded-lg scale" src="https://images.unsplash.com/photo-1618183479302-1e0aa382c36b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="office content 2">
+        </div>
+    </div>
+</section>
+    </div>
+    
+    <div class="grid grid-rows-2 snap-start md:grid-cols-2 h-screen w-screen" id="second-bis" >
+      <div class="grid grid-cols-[20%_1fr] md:h-screen">
+        <div class="bg-black text-white flex justify-center items-center w-full h-full">
+          <p class="[writing-mode:vertical-lr] text-5xl rotate-180">EN BOUCHE:</p>
+        </div>
+        <div class="bg-black text-white md:text-6xl text-xl pt-48">
+          Au premier abord déconcertant, il libère ensuite toute sa palette aromatique allant du fruit exotique
+          à la fraicheur des Astéracées.</div>
+      </div>
+      <div class="grid grid-cols-[1fr_20%]">
+        <div class="text-xl md:text-6xl p-4 place-self-center t">On parie que les hard seltzer ne sont pas une mode passagère mais le reflet de changements profonds des modes de consommation"</div>
+        <div class="flex justify-center items-center w-full h-full">
+          <p class="[writing-mode:vertical-lr] text-5xl rotate-180">HARD SELTZER</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="snap-start bg-white w-screen h-screen grid grid-flow-row place-items-center text-xl grid-r"
+    id="third"
+    >
+        <h3 class=" first-letter:text-gold-400">Comment Teddy fear est né ?</h3>
+        
+        <div class="w-screen  bg-[url('https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80')]">
+            <p class="" >Trois grammes,</p>
+        </div>
+        <div>
+            <p>Deux jeunes,</p>
+        </div>
+        <div>
+            <p>Une passion.</p>
+        </div>
+    </div>
+
+    <div class="snap-start bg-fuchsia-100 w-screen h-screen flex items-center justify-center"
+    id="fourth"
+    >
+        <div class="container mx-auto px-6 md:px-12 xl:px-32">
+            <div class="mb-15 md:mb-16 text-center">
+                <h2 class="mb-4 text-center text-2xl font-bold text-gray-900 md:text-4xl">TEDDY FEAR, l'équipe</h2>
+                <p class="text-gray-600 lg:mx-auto lg:w-8/12">L'equipe TEDDY FEAR est composé de 3 personnes qui ont pour but de vous faire découvrir un nouveau produit.</p>
+            </div>
+            <div class="grid items-center gap-1 md:gap-12 md:grid-cols-3">
+                <div class="space-y-4 text-center">
+                    <%= image_tag("val", class: "mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64") %>
+                    <div>
+                        <h4 class="text-2xl">Valentin</h4>
+                        <span class="block text-sm text-gray-500">CEO-Founder</span>
+                    </div>
+                </div>
+                <div class="space-y-4 text-center">
+                    <%= image_tag("martin", class: "mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64") %>
+                    <%# <img class="mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64" src="https://tailus.io/sources/blocks/classic/preview/images/man.jpg" alt="man" loading="lazy" width="1000" height="667" /> %>
+                    <div>
+                        <h4 class="text-2xl">Martin</h4>
+                        <span class="block text-sm text-gray-500">Gouteur Officiel</span>
+                    </div>
+                </div>
+                <div class="space-y-4 text-center">
+                    <%= image_tag("sama", class: "mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64") %>
+                <div>
+                    <h4 class="text-2xl">Samuel</h4>
+                    <span class="block text-sm text-gray-500">Informaticien</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="snap-start bg-gold-900 w-screen grid place-items-center h-screen"
+    id="fifth"
+    >
+    
+        <section>
+    <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+        <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">Suivez nos reseaux sociaux</h2>
+        <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-2 dark:text-gray-400">
+
+  <!-- Facebook -->
+  <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block px-6 py-2.5 mb-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out" style="background-color: #1877f2;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-4 h-4">
+      <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+    </svg>
+
+  </button>
+
+  <!-- Instagram -->
+  <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block px-6 py-2.5 mb-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out" style="background-color: #c13584;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4">
+      <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+    </svg>
+  </button>
+
+              <!-- TikTok -->
+  <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block px-6 py-2.5 mb-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out" style="background-color: #6a76ac;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-4 h-4">
+      <path fill="currentColor" d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/>
+    </svg>
+  </button>
+
+    <!-- Twitter -->
+  <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block px-6 py-2.5 mb-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out" style="background-color: #1da1f2;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4">
+      <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+    </svg>
+  </button>
+        </div>
+    </div>
+    <%= image_tag("TAGLINE", class: " scale-50 md:scale-50 md:hidden") %>
+</section>
+
+
+    </div>
+
+
 </div>
+
+<%= render 'layouts/prevention' %>

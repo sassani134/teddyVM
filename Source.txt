@@ -35,3 +35,24 @@ https://daily-dev-tips.com/posts/center-elements-with-tailwind-css/
 
 --How to importmap an other thing from threejs
 https://youtu.be/FKDCflZde-M?t=1358
+
+--Color setting tailwind
+https://tailwindcss.com/docs/customizing-colors
+https://www.hexcolortool.com/
+
+--Polices
+montserrat
+https://fonts.google.com/specimen/Montserrat
+https://dev.to/thomasvanholder/add-a-custom-tailwind-css-fonts-to-your-website-1nn6
+
+
+--icone font awsome
+https://fontawesome.com/docs/web/use-with/ruby-on-rails
+
+--rails favicons
+https://realfavicongenerator.net/favicon_result?file_id=p1golm45nb9113insd9ed02ce6&technology=ror#.Y-IljhyZNhE
+
+--snap scroll with a navbar 
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scroll_Snap/Basic_concepts
+https://stackoverflow.com/questions/71645872/css-scroll-snapping-sections-in-fixed-navbar
+https://tailwindcss.com/docs/scroll-padding

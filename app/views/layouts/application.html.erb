@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Teddyvm</title>
+    <title>Teddy Fear</title>
+    <%= favicon_link_tag("logoNoir")%>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,8 +13,10 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
-      <%= yield %>
+    <main>
+      <%= render 'layouts/navbar' %>
+        <%= yield %>
+      <%= render 'layouts/footer' %>
     </main>
   </body>
 </html>

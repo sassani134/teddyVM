@@ -6,6 +6,8 @@ rails g controller cookies index policy
 rails g controller ageGates index
 mkdir partial
 touch partial/_navbar.html.erb
+rails g stimulus navbar
+bin/importmap pin el-transition
 touch partial/_footer.html.erb
 touch partial/_prevention.html.erb
 rails g stimulus threejs
@@ -18,3 +20,4 @@ bin/rails g solidus:install
 bundle add solidus_stripe
 bundle exec rails g solibindus_stripe:install
 
+mkdir app/assets/fonts
