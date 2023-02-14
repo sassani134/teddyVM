@@ -26,6 +26,9 @@ module.exports = {
           900: "#997100",/* -40% de l'original*/
         },
       },
+      backgroundImage: {
+        'teddybg': "url('TeddyBG.png')",
+      }
     },
   },
   plugins: [
