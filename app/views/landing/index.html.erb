@@ -1,15 +1,17 @@
-<div class="snap-y snap-mandatory h-screen overflow-scroll scroll-smooth">
+<div class="snap-y snap-mandatory h-screen overflow-scroll scroll-smooth">*
+
     <div 
-    class="  snap-start bg-black relative grid place-items-center h-screen"
+    class="snap-start bg-black bg-repeat-space bg-teddybg  relative grid place-items-center h-screen"
     id="first"
     >  
 
+        <%#= video_tag("https://www.youtube.com/shorts/PZ61U7Oh-MA", autoplay: :autoplay, loop: :loop, muted: :muted , class:"absolute aspect-video")%>
         <%#= video_tag("teddy", autoplay: :autoplay, loop: :loop, muted: :muted , class:"absolute aspect-video")%>
-        <!--
-        <video autoplay loop muted class="absolute w-auto min-w-full min-h-full max-w-none">
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4" type="video/mp4" />Your browser does not support the video tag.
-        </video>
-        -->
+        <video autoplay="autoplay" loop="loop" muted="muted" class="absolute aspect-video" src="/assets/teddy-921b834b27056d1ae3a6a5e822c4002e32fa64329168bdc87e0e412914cbed48.mp4"></video>
+        <%# <video autoplay loop muted class="absolute w-auto min-w-full min-h-full max-w-none">
+            <source src="https://www.youtube.com/shorts/PZ61U7Oh-MA" type="video/mp4" />Your browser does not support the video tag.
+        </video> %>
+        
         <!--<div class="absolute w-full h-full bg-black opacity-50"></div>-->
 <section class="z-10">
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
@@ -96,7 +98,7 @@
         </div>
     </div>
 
-    <div class="snap-start bg-fuchsia-100 w-screen h-screen flex items-center justify-center"
+    <div class="snap-start bg-white bg-repeat-space bg-teddybg w-screen h-screen flex items-center justify-center"
     id="fourth"
     >
         <div class="container mx-auto px-6 md:px-12 xl:px-32">
@@ -106,14 +108,16 @@
             </div>
             <div class="grid items-center gap-1 md:gap-12 md:grid-cols-3">
                 <div class="space-y-4 text-center">
-                    <%= image_tag("val", class: "mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64") %>
+                    <%#= image_tag("val", class: "mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64") %>
+                    <img class="mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64" src="/assets/val-948ce7a2d276eac0c11683968c313e843c97395e6f3df5d5e8dd57bd89f3f948.png">
                     <div>
                         <h4 class="text-2xl">Valentin</h4>
                         <span class="block text-sm text-gray-500">CEO-Founder</span>
                     </div>
                 </div>
                 <div class="space-y-4 text-center">
-                    <%= image_tag("martin", class: "mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64") %>
+                <img class="mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64" src="/assets/martin-75c4c1880a4296644c25093d521b5591a998fc856426ac08e1be1d788e910030.jpg">
+                    <%#= image_tag("martin", class: "mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64") %>
                     <%# <img class="mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64" src="https://tailus.io/sources/blocks/classic/preview/images/man.jpg" alt="man" loading="lazy" width="1000" height="667" /> %>
                     <div>
                         <h4 class="text-2xl">Martin</h4>
@@ -121,7 +125,8 @@
                     </div>
                 </div>
                 <div class="space-y-4 text-center">
-                    <%= image_tag("sama", class: "mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64") %>
+                    <img class="mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64" src="/assets/sama-f28a19d79455723e434ad57328bd6fb10884edb5d88635f8999d3bf2e75038c0.jpg">
+                    <%#= image_tag("sama", class: "mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64") %>
                 <div>
                     <h4 class="text-2xl">Samuel</h4>
                     <span class="block text-sm text-gray-500">Informaticien</span>
