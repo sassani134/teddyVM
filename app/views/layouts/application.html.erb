@@ -12,7 +12,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body style=" font-family: 'Montserrat', sans-serif;">
       <!-- cookies & age Gates -->
     <%= turbo_frame_tag :cookie_consent, src: cookies_path if session[:cookie_consent].nil? || session[:cookie_consent] == false %>
     <%= turbo_frame_tag :age_verification, src: age_gates_path if session[:age_verification].nil? || session[:age_verification] == false %>

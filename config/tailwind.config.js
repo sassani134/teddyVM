@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        montserrat: ['Montserrat', ...defaultTheme.fontFamily.sans],
+        'montserrat': ['Montserrat', ...defaultTheme.fontFamily.sans],
         //sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
       colors: {
@@ -28,6 +28,7 @@ module.exports = {
       },
       backgroundImage: {
         'teddybg': "url('TeddyBG.png')",
+        'teddybg1': "url('TeddyBG1.png')",
       }
     },
   },
