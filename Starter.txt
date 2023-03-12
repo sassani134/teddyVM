@@ -12,6 +12,7 @@ touch partial/_footer.html.erb
 touch partial/_prevention.html.erb
 rails g stimulus threejs
 rails g stimulus modal
+rails g stimulus age
 rails g stimulus menu
 
 bundle add solidus
@@ -21,3 +22,21 @@ bundle add solidus_stripe
 bundle exec rails g solibindus_stripe:install
 
 mkdir app/assets/fonts
+
+
+
+bin/importmap pin stimulus-scroll-to
+bin/importmap pin stimulus-scroll-reveal
+
+
+
+
+
+
+Mentions légales et conditions générales d'utilisation
+informations nutritionelles
+Politique en matière de cookies
+Politique de confidentialité
+Consommation responsable
+
+

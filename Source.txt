@@ -44,7 +44,7 @@ https://www.hexcolortool.com/
 montserrat
 https://fonts.google.com/specimen/Montserrat
 https://dev.to/thomasvanholder/add-a-custom-tailwind-css-fonts-to-your-website-1nn6
-
+https://blog.logrocket.com/how-to-use-custom-fonts-tailwind-css/
 
 --icone font awsome
 https://fontawesome.com/docs/web/use-with/ruby-on-rails
@@ -56,3 +56,6 @@ https://realfavicongenerator.net/favicon_result?file_id=p1golm45nb9113insd9ed02c
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scroll_Snap/Basic_concepts
 https://stackoverflow.com/questions/71645872/css-scroll-snapping-sections-in-fixed-navbar
 https://tailwindcss.com/docs/scroll-padding
+
+Iphone 10
+responsiveness
