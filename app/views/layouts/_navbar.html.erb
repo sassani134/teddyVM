@@ -37,17 +37,23 @@ class="fixed w-screen backdrop-filter backdrop-blur-lg bg-opacity-90 bg-black  z
       <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
         <div class="flex flex-shrink-0 items-center">
 
-          <img class="block h-12 w-auto lg:hidden" alt="Your Company" src="/assets/logoBlanc-37820822e2ca8a7fd467241a2acd0f81f1b2f8002f831b0cbfcab8c90858121b.png">
-          <img class="hidden h-12 w-auto lg:block" alt="Your Company" src="/assets/logoBlanc-37820822e2ca8a7fd467241a2acd0f81f1b2f8002f831b0cbfcab8c90858121b.png">
-        
-          <%#= image_tag("logoBlanc", class: "block h-12 w-auto lg:hidden", alt:"Your Company")%>
-          <%#= image_tag("logoBlanc", class: "hidden h-12 w-auto lg:block", alt:"Your Company")%>
+          <%= link_to root_path do %>
+            <%= image_tag("logoBlanc", class: "block h-12 w-auto lg:hidden", alt:"Your Company")%>
+            <%= image_tag("logoBlanc", class: "hidden h-12 w-auto lg:block", alt:"Your Company")%>
+          <% end %>
         </div>
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Boutique</a>
-
+            <!-- Rajouter les arias puis les controller via stimulus et tailwind snap. -->
+            <!--<a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Boutique</a>-->
+            <%= link_to("Boutique","#", class: "bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium")%>
+            <%= link_to("Teddy Fear",root_path(anchor: "first"), data: {controller: "scroll-to"}, class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium")%>
+            <%= link_to("C'est quoi ?",root_path(anchor:"second"), data: {controller: "scroll-to"}, class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium")%>
+            <%= link_to("L'histoire",root_path(anchor:"third"), data: {controller: "scroll-to"}, class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium")%>
+            <%= link_to("L'équipe",root_path(anchor:"fourth"), data: {controller: "scroll-to"}, class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium")%>
+            <%= link_to("Contact",root_path(anchor:"fifth"), data: {controller: "scroll-to"}, class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium")%>
+            <!--
             <a href="#first" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Teddy Fear</a>
 
             <a href="#second" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">C'est quoi ?</a>
@@ -57,6 +63,7 @@ class="fixed w-screen backdrop-filter backdrop-blur-lg bg-opacity-90 bg-black  z
             <a href="#fourth" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">L'équipe</a>
 
             <a href="#fifth" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+            -->
           </div>
         </div>
       </div>
@@ -130,8 +137,14 @@ class="fixed w-screen backdrop-filter backdrop-blur-lg bg-opacity-90 bg-black  z
     data-transition-leave-end="transform opacity-0 scale-95"
     >
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-      <a href="" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Boutique</a>
-
+      <!-- <a href="" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Boutique</a> -->
+      <%= link_to "Boutique", "#", class: "bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" %>
+      <%= link_to "Teddy Fear", root_path(anchor:"first"), data: {controller: "scroll-to"}, class: "bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" %>
+      <%= link_to "C'est quoi ?", root_path(anchor:"second"), data: {controller: "scroll-to"} , class: "bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" %>
+      <%= link_to "L'histoire", root_path(anchor:"third"), data: {controller: "scroll-to"}, class: "bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" %>
+      <%= link_to "L'équipe", root_path(anchor:"fourth"), data: {controller: "scroll-to"}, class: "bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" %>
+      <%= link_to "Contact", root_path(anchor:"fifth"), data: {controller: "scroll-to"}, class: "bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" %>
+      <!--
       <a href="#first" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Teddy Fear</a>
 
       <a href="#second" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">C'est quoi ?</a>
@@ -141,6 +154,7 @@ class="fixed w-screen backdrop-filter backdrop-blur-lg bg-opacity-90 bg-black  z
       <a href="#fourth" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">L'équipe</a>
 
       <a href="#fifth" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+      -->
     </div>
   </div>
 
