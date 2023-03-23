@@ -64,16 +64,13 @@
 
   <!-- Section: Design Block -->
   <section class="mb-32 text-gray-800">
-    <h2 class="text-3xl font-bold mb-12 text-center">Why is it so great?</h2>
 
     <div class="flex flex-wrap items-center">
       <div class="grow-0 shrink-0 basis-auto w-full lg:w-5/12 mb-12 lg:mb-0 md:px-6">
         <div class="relative overflow-hidden bg-no-repeat bg-cover rounded-lg shadow-lg " data-mdb-ripple="true"
           data-mdb-ripple-color="light" style="background-position: 50%">
-          <%# <img src="https://mdbootstrap.com/img/new/textures/full/98.jpg" class="w-full" /> %>
-          <%=image_tag("tFearPub", class: "w-full ")%>
-          <%#=image_tag("tFearPub1", class: "w-full")%>
-
+          <!--<img src="https://mdbootstrap.com/img/new/textures/full/98.jpg" class="w-full" />-->
+          <%=image_tag("https://images.unsplash.com/photo-1623274545361-63e9d95e4643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80", alt: "tFearPub", class: "w-full") %>
             <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
               style="background-color: rgba(0, 0, 0, 0.4)">
               <div class="flex justify-center items-center h-full">
@@ -103,7 +100,7 @@
         <div class="flex mb-12">
           <div class="shrink-0">
             <div class="p-4 rounded-md shadow-lg bg-transparent" >
-              <p class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <p class="w-5 h-5 text-white"  viewBox="0 0 512 512">
                 <span class="w-max h-max">&#127879;</span>
               </p>
             </div>
@@ -135,7 +132,7 @@
 
         <div class="flex">
           <div class="shrink-0">
-            <div class="p-4 rounded-md shadow-lg" style="background-color: hsl(204, 30%, 20%)">
+            <div class="p-4 rounded-md shadow-lg bg-transparent">
               <p class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 544 512">
                 <span class="w-max h-max">&#129305;</span>
               </p>
@@ -256,8 +253,8 @@
         </div>
           
         <div class="grid grid-cols-2 gap-4 mt-8" id="imageBox1">
-          <img class="w-full rounded-lg" src="https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" alt="office content 1">
-          <img class="mt-4 w-full lg:mt-10 rounded-lg scale" src="https://images.unsplash.com/photo-1551866442-64e75e911c23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="office content 2">
+          <%=image_tag("https://images.unsplash.com/photo-1599777648304-c76d5422699c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHN1bnNldCUyMHNoYWRvd3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60", class:" w-full rounded-lg") %>
+          <img class="mt-4 w-full lg:mt-10 rounded-lg scale" src="https://images.unsplash.com/photo-1549144511-f099e773c147?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="office content 2">
         </div>
       </div>
     </section>
@@ -272,7 +269,7 @@
           <div class="grid items-center gap-1 md:gap-12 md:grid-cols-3">
               <div class="space-y-4 text-center">
                   <%= image_tag("val.jpg", class: "mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64") %>
-                  <%# <img class="mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"> %>
+                  <%# <img class="mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64" src="https://images.unsplash.com/photo-1571175475562-83600102a315?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"> %>
               <div>
                   <h4 class="text-2xl">Valentin</h4>
                   <span class="block text-sm text-gray-500">CEO-Founder</span>
@@ -365,8 +362,8 @@
         </div>
     </div>
     
-    <%# <img class=" scale-50 md:scale-50 md:hidden" src="/assets/TAGLINE-78b945e83e46c1eb5cf24653605d1e2e6046121d1d315d7c3a3a15e519bd8d3c.png"> %>
-    <%#= image_tag("TAGLINE", class: " scale-50 md:scale-50 md:hidden") %>
+    <!--<img class="scale-100 md:scale-50 md:hidden " src="/assets/TAGLINE-78b945e83e46c1eb5cf24653605d1e2e6046121d1d315d7c3a3a15e519bd8d3c.png">-->
+    <%= image_tag("TAGLINE", class: " md:scale-50 scale-75") %>
     </section>
 </div>
 
