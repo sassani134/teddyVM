@@ -1,143 +1,336 @@
-<div class="snap-y snap-mandatory h-screen overflow-scroll scroll-smooth">
+<div class="bg-black" id="all">
 
-  <section class="mb-40 snap-start bg-black relative grid place-items-center h-screen"
-  id="first"
-  >
-    <div class="px-6 py-12 md:px-12 text-gray-800 text-center lg:text-left">
-      <div class="container mx-auto xl:px-32">
-        <div class="grid lg:grid-cols-2  items-center">
-          <div class="md:mt-12 lg:mt-0 mb-12 lg:mb-0">
-            <div class="block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14" style="background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px);">
-              <h1 class="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tight mb-12 text-gold-600">TEDDY FEAR <br /><span class="text-white">The freshest breuvage</span></h1>
-              <a class="inline-block px-7 py-3 mb-2 md:mb-0 md:mr-2 bg-gold-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-gold-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gold-800 active:shadow-lg transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#!" role="button">Boutique</a>
-              <a class="inline-block px-7 py-3 bg-transparent text-blue-600 font-medium text-sm leading-snug uppercase rounded hover:text-blue-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#!" role="button">en Savoir Plus</a>
-            </div>
+    <section class=" sm:mb-18 mb-96 bg-black relative grid place-items-center h-screen " 
+    id="landing"
+    >
+      <div class="px-6 pt-12 md:px-12 text-black text-center lg:text-left">
+          <div class="container mx-auto xl:px-32">
+              <div class="grid lg:grid-cols-2  md:items-center items-start ">
+                  <div class="md:mt-12 lg:mt-0 md:mb-12 -mb-2 lg:mb-0">
+                      <div class="block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14" style="background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px);"
+                      id="welcolmeBox"
+                      >
+                          <h1 class="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tight mb-12 text-gold-500">TEDDY FEAR <br />
+                              <span class="text-white">Drink different.</span>
+                          </h1>
+                          <a 
+                          class="inline-block px-7 py-3 mb-2 md:mb-0 md:mr-2 bg-gold-400 text-black font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-gold-700 
+                          hover:shadow-lg hover:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gold-800 active:shadow-lg transition duration-150 ease-in-out"
+                          href="#!" 
+                          role="button">
+                            Essayez le !
+                          </a>
+                          <a 
+                          class="inline-block px-7 py-3 bg-transparent text-blue-600 font-medium text-sm leading-snug uppercase rounded hover:text-blue-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none 
+                          focus:ring-0 active:bg-gray-200 transition duration-150 ease-in-out" 
+                          data-mdb-ripple="true" 
+                          data-mdb-ripple-color="light" 
+                          href="#!" 
+                          role="button">
+                              en Savoir Plus
+                          </a>
+                      </div>
+                  </div>
+                  <div class="md:mb-12 lg:mb-0 sm:" id="theVideo">
+                      <%= video_tag("1.mp4", class:"md:w-full rounded-lg shadow-lg" ,autoplay: "true", muted: "true", loop: "true")%>
+                  </div>
+              </div>
           </div>
-          <div class="md:mb-12 lg:mb-0">
-            <video autoplay="autoplay" loop="loop" muted="muted" class="w-full rounded-lg shadow-lg" src="/assets/teddy-921b834b27056d1ae3a6a5e822c4002e32fa64329168bdc87e0e412914cbed48.mp4"></video>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-
-
-    <!--
-        <p>
-            <h2>Teddy Fear</h2> est un hard seltzer soit une boisson pétrillante aromatisée et alcoolisé
-            a base fruit. Produit en France,Teddy Fear présente un degré de 6.8% d'alcool et se consomme très frais a la bouteille
-        <p>
-    -->
-    <section class="snap-start bg-black w-screen h-screen flex items-center justify-center text-white" id="second">
-      <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+    <section class="bg-black w-screen h-screen flex items-center justify-center text-white" id="whatIs">
+      <div class="gap-16 items-center py-8 px-4 mx-auto lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Qu'est que TEDDY FEAR ?</h2>
-          <p class="mb-4">TEDDY FEAR est Un hard seltzer, une boisson à base de malt, de sucre, d'eau et de houblon. Il est léger et pétillant comme la douceur d'un petit ourson en peluche. Et contrairement au hard seltzer il est effrayant par sa teneur en alcool de 6.8% .Les hard seltzers sont très populaires car ils sont sans gluten, sans sucres ajoutés et offrent une variété de saveurs.</p>
-          <p>TEDDY FEAR est une boisson créer par des francais et en France.</p>
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Qu'est que <span class="text-gold-500">TEDDY FEAR</span> ?</h2>
+            <p class="mb-4 text-2xl text-gold-500">TEDDY FEAR <br><span class=" text-lg text-white">Hardseltzer</span></p>
+            <div class="text-2xl">
+              <p>C’est une recette originale, légère et douce, quelques gouttes d’alcool et des fines bulles. Un cocktail aux saveurs made in France.</p>
+              <p>Un subtil mélange d’alcool blanc et d’arômes naturels de fruits et de plantes, arrosé à l’eau des Alpes.</p>
+              <p>A déguster frais, à la bouteille ou dans un verre, seul ou en cocktail</p>
+            </div>
         </div>
-        <div class="grid grid-cols-2 gap-4 mt-8">
-          <img class="w-full rounded-lg" src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80" alt="office content 1">
-          <img class="mt-4 w-full lg:mt-10 rounded-lg scale" src="https://images.unsplash.com/photo-1618183479302-1e0aa382c36b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="office content 2">
+        <div class="grid grid-cols-2 gap-4 mt-8" id="imageBox1">
+          <img class="w-full rounded-lg" 
+          src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80" alt="office content 1">
+          <img class="sm:-mt-96 mt-4 w-full w- lg:mt-10 rounded-lg scale"
+          src="https://images.unsplash.com/photo-1618183479302-1e0aa382c36b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="office content 2">
         </div>
       </div>
     </section>
 
+<!-- Container for demo purpose -->
+<div class="container my-24 px-6 mx-auto">
 
-    
-  <section class="grid grid-rows-2 snap-start md:grid-cols-2 h-screen w-screen" id="second-bis" >
-    <div class="grid grid-cols-[20%_1fr] md:h-screen">
-      <div class="bg-black text-white flex justify-center items-center w-full h-full">
-        <p class="[writing-mode:vertical-lr] text-5xl rotate-180">EN BOUCHE:</p>
+  <!-- Section: Design Block -->
+  <section class="mb-32 text-gray-800">
+    <h2 class="text-3xl font-bold mb-12 text-center">Why is it so great?</h2>
+
+    <div class="flex flex-wrap items-center">
+      <div class="grow-0 shrink-0 basis-auto w-full lg:w-5/12 mb-12 lg:mb-0 md:px-6">
+        <div class="relative overflow-hidden bg-no-repeat bg-cover rounded-lg shadow-lg " data-mdb-ripple="true"
+          data-mdb-ripple-color="light" style="background-position: 50%">
+          <%# <img src="https://mdbootstrap.com/img/new/textures/full/98.jpg" class="w-full" /> %>
+          <%=image_tag("tFearPub", class: "w-full ")%>
+          <%#=image_tag("tFearPub1", class: "w-full")%>
+
+            <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+              style="background-color: rgba(0, 0, 0, 0.4)">
+              <div class="flex justify-center items-center h-full">
+                <div class="px-6 py-12 md:px-12 text-white text-center">
+                  <h3 class="text-2xl uppercase font-bold mb-6">
+                    TEDDY FEAR
+                  </h3>
+                  <p style="color: hsl(210, 12%, 80%)">
+                    <span class="text-gold-500">TEDDY FEAR</span> EST UN HARDSELTZER SOIT UNE EAU PÉTILLANTE
+                    AROMATISÉE ET ALCOOLISÉE À BASE D'ALCOOL FERMENTÉ. IL PRESENTE UN DEGRÉ DE 6.8% ET SE CONSOMME DIRECTEMENT À LA BOUTEILLE OU EN COCKTAIL.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="relative overflow-hidden bg-no-repeat bg-cover">
+              <div
+                class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                style="background-color: rgba(251, 251, 251, 0.2)"></div>
+            </div>
+          
+        </div>
       </div>
 
-      <div class="bg-black text-white md:text-6xl text-xl pt-48">
-        Au premier abord déconcertant, il libère ensuite toute sa palette aromatique allant du fruit exotique
-        à la fraicheur des Astéracées.
-      </div>
-    </div>
-      
-    <div class="grid grid-cols-[1fr_20%]">
-      <div class="text-xl md:text-6xl p-4 place-self-center md:pt-48">
-        On parie que les hard seltzer ne sont pas une mode passagère mais le reflet de changements profonds des modes de consommation"
-      </div>
-      <div class="flex justify-center items-center w-full h-full">
-        <p class="[writing-mode:vertical-lr] text-5xl rotate-180 ">HARD SELTZER</p>
+      <div class="grow-0 shrink-0 basis-auto w-full lg:w-7/12 md:px-6">
+
+
+        <div class="flex mb-12">
+          <div class="shrink-0">
+            <div class="p-4 rounded-md shadow-lg bg-transparent" >
+              <p class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <span class="w-max h-max">&#127879;</span>
+              </p>
+            </div>
+          </div>
+          <div class="grow ml-4">
+            <p class="font-bold mb-1">HARD SELTZER</p>
+            <p class="text-gray-500">
+              "On parie que les hard seltzer ne sont pas une mode passagère mais le reflet de changements profonds des modes de consommation"
+            </p>
+            <p>"Une alternative a la bière, un coktaill en bouteille."</p>
+          </div>
+        </div>
+
+        <div class="flex mb-12">
+          <div class="shrink-0">
+            <div class="p-4 rounded-md shadow-lg bg-transparent">
+              <p class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                <span class="w-max h-max">&#129327;</span>
+              </p>
+            </div>
+          </div>
+          <div class="grow ml-4">
+            <p class="font-bold mb-1">EN BOUCHE:</p>
+            <p class="text-gray-500">
+              Au premier abord déconcertant, il libère ensuite toute sa palette aromatique allant du fruit exotique à la fraicheur des Astéracées.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex">
+          <div class="shrink-0">
+            <div class="p-4 rounded-md shadow-lg" style="background-color: hsl(204, 30%, 20%)">
+              <p class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 544 512">
+                <span class="w-max h-max">&#129305;</span>
+              </p>
+            </div>
+          </div>
+          <div class="grow ml-4">
+            <p class="font-bold mb-1">C'EST ÉGALEMENT:</p>
+            <ul class="text-gray-500">
+              <li>FRUITÉ</li>
+              <li>PÉTILLANT</li>
+              <li>PAS D'AMERTUME</li>
+              <li>RAFRAÎCHISSANT</li>
+              <li>6,8% VOL</li>
+              <li><span class="text-blue-500">PRODUIT</span> EN <span class="text-red-600">FRANCE</span></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+  <!-- Section: Design Block -->
 
-      <section class="snap-start bg-white w-screen h-screen flex items-center justify-center text-black" id="third">
-      <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+</div>
+<!-- Container for demo purpose -->
+
+
+    <%# a Changer %>
+
+  <%# <section class="w-screen grow-0 bg-transparent">
+  <div class="grid grid-cols-2">
+    <div class="w-min h-0 shadow-lg aspect-w-1 aspect-h-1 bg-black text-right text-white">
+      <p><span class="text-gold-500">TEDDY FEAR</span> </p>
+      <p>QU'EST CE QUE TEDDY FEAR ?</p>
+      <p><span class="text-gold-500">TEDDY FEAR</span> EST UN HARDSELTZER SOIT UNE EAU PÉTILLANTE
+        AROMATISÉE ET ALCOOLISÉE À BASE D'ALCOOL FERMENTÉ. IL PRESENTE UN DEGRÉ DE 6.8% ET SE CONSOMME DIRECTEMENT À LA BOUTEILLE OU EN COCKTAIL. 
+     </p>
+    </div>
+    <div class="w-full h-0 shadow-lg aspect-w-1 aspect-h-1 bg-white">
+
+      <p>HARD SELTZER</p>
+      <p>
+      "On parie que les hard seltzer ne sont pas une mode passagère mais le reflet de changements profonds des modes de consommation"
+      </p>
+
+      <p>"Une alternative a la bière, un coktaill en bouteille."</p>
+    </div>
+    <div class="w-full h-0 shadow-lg aspect-w-1 aspect-h-1 bg-white">
+      <p> EN BOUCHE: </p>
+      <p> Au premier abord déconcertant, il libère ensuite toute sa palette aromatique allant du fruit exotique à la fraicheur des Astéracées.
+      </p>
+    </div>
+    <div class="w-full h-0 shadow-lg aspect-w-1 aspect-h-1 bg-black text-white">
+      <p><span class="text-gold-500">TEDDY FEAR</span> </p>
+      <p>C'EST ÉGALEMENT:</p>
+
+      <ul>
+        <li>FRUITÉ</li>
+        <li>PÉTILLANT</li>
+        <li>PAS D'AMERTUME</li>
+        <li>RAFRAÎCHISSANT</li>
+        <li>6,8% VOL</li>
+        <li><span class="text-blue-500">PRODUIT</span> EN <span class="text-red-600">FRANCE</span></li>
+      </ul>
+        
+    </div>
+  </div>
+</section> %>
+    <%# a Changer %>
+      
+      <%# <section class="w-screen h-screen shadow-lg aspect-w-1 aspect-h-1 bg-black text-right text-white">
+        <p><span class="text-gold-500">TEDDY FEAR</span> </p>
+        <p>QU'EST CE QUE TEDDY FEAR ?</p>
+        <p><span class="text-gold-500">TEDDY FEAR</span> EST UN HARDSELTZER SOIT UNE EAU PÉTILLANTE
+          AROMATISÉE ET ALCOOLISÉE À BASE D'ALCOOL FERMENTÉ. IL PRESENTE UN DEGRÉ DE 6.8% ET SE CONSOMME DIRECTEMENT À LA BOUTEILLE OU EN COCKTAIL. 
+        </p>
+      </section>
+
+      <section class="w-full h-0 shadow-lg aspect-w-1 aspect-h-1 bg-white">
+
+        <p>HARD SELTZER</p>
+        <p>
+        "On parie que les hard seltzer ne sont pas une mode passagère mais le reflet de changements profonds des modes de consommation"
+        </p>
+
+        <p>"Une alternative a la bière, un coktaill en bouteille."</p>
+      </section>
+
+      <section class="w-full h-0 shadow-lg aspect-w-1 aspect-h-1 bg-white">
+        <p> EN BOUCHE: </p>
+        <p> Au premier abord déconcertant, il libère ensuite toute sa palette aromatique allant du fruit exotique à la fraicheur des Astéracées.
+        </p>
+      </section>
+
+      <section class="w-full h-0 shadow-lg aspect-w-1 aspect-h-1 bg-black text-white">
+        <p><span class="text-gold-500">TEDDY FEAR</span> </p>
+        <p>C'EST ÉGALEMENT:</p>
+
+        <ul>
+          <li>FRUITÉ</li>
+          <li>PÉTILLANT</li>
+          <li>PAS D'AMERTUME</li>
+          <li>RAFRAÎCHISSANT</li>
+          <li>6,8% VOL</li>
+          <li><span class="text-blue-500">PRODUIT</span> EN <span class="text-red-600">FRANCE</span></li>
+        </ul>
+          
+      </section> %>
+
+    <section class="bg-white w-screen h-screen flex  items-center justify-center text-black" id="history">
+      <div class="gap-8 items-center py-8 px-4 lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+
         <div class="sm:text-lg ">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-black">Comment Teddy FEAR est né</h2>
-          <p class="mb-4">Teddy Fear est si frais grâce à sa recette unique et fraîche, qui combine cinq ingrédients simples, tels que l'eau, le sucre, le malt, le houblon et les huiles essentielles. Il est également brassé selon un procédé spécial qui permet de conserver toute la fraîcheur et le goût de ses ingrédients. Enfin, Teddy Fear est embouteillé à froid, ce qui permet de préserver sa saveur et sa fraîcheur.</p>
-          <p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick.</p>
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-black">Comment <span class="text-gold-500">TEDDY FEAR</span> est né</h2>
+          <p class="mb-4">C’est l’histoire de deux jeunes hommes comme tout le monde; </p>
+          <p>Deux jeunes hommes lassés de boire les mêmes choses.</p>
+          <p>Deux jeunes hommes qui avaient envie d’innover, de créer quelque chose. </p>
+          <p>Deux jeunes hommes qui ont pour ambition de révolutionner vos soirées.</p>
         </div>
-        <div class="grid grid-cols-2 gap-4 mt-8">
+          
+        <div class="grid grid-cols-2 gap-4 mt-8" id="imageBox1">
           <img class="w-full rounded-lg" src="https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" alt="office content 1">
           <img class="mt-4 w-full lg:mt-10 rounded-lg scale" src="https://images.unsplash.com/photo-1551866442-64e75e911c23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="office content 2">
         </div>
       </div>
     </section>
 
-  <%# <section class="snap-start bg-white w-screen h-screen grid grid-cols-1 rounded-full place-items-center text-xl"
-  id="third"
-  >
-    <h3 class=" first-letter:text-gold-400">Comment Teddy fear est né ?</h3>  
-    <div class="w-screen  bg-[url('https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80')]">
-      <p class="" >Trois grammes,</p>
-    </div>
-    <div>
-      <p>Deux jeunes,</p>
-    </div>
-    <div>
-      <p>Une passion.</p>
-    </div>
-  </section> %>
-
-  <div class="snap-start bg-white w-screen h-screen flex items-center justify-center"
-  id="fourth"
-  >
-    <div class="container mx-auto px-6 md:px-12 xl:px-32">
-      <div class="mb-15 md:mb-16 text-center">
-        <h2 class="mb-4 text-center text-2xl font-bold text-gray-900 md:text-4xl">TEDDY FEAR, l'équipe</h2>
-          <p class="text-gray-600 lg:mx-auto lg:w-8/12">L'equipe TEDDY FEAR est composé de 3 personnes qui ont pour but de vous faire découvrir un nouveau produit.</p>
-      </div>
-      <div class="grid items-center gap-1 md:gap-12 md:grid-cols-3">
-        <div class="space-y-4 text-center">
-          <%#= image_tag("val", class: "mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64") %>
-          <img class="mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64" src="/assets/val-948ce7a2d276eac0c11683968c313e843c97395e6f3df5d5e8dd57bd89f3f948.png">
-          <div>
-            <h4 class="text-2xl">Valentin</h4>
-            <span class="block text-sm text-gray-500">CEO-Founder</span>
+    <section class="py-20 bg-white w-screen flex items-center justify-center"
+    id="fourth"
+    >
+      <div class="container mx-auto px-6 md:px-12 xl:px-32">
+          <div class="mb-15 md:mb-16 text-center">
+              <h2 class="mb-4 text-center text-2xl font-bold text-gray-900 md:text-4xl"><span class="text-gold-500">TEDDY FEAR</span>, l'équipe</h2>
           </div>
-        </div>
+          <div class="grid items-center gap-1 md:gap-12 md:grid-cols-3">
+              <div class="space-y-4 text-center">
+                  <%= image_tag("val.jpg", class: "mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64") %>
+                  <%# <img class="mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"> %>
+              <div>
+                  <h4 class="text-2xl">Valentin</h4>
+                  <span class="block text-sm text-gray-500">CEO-Founder</span>
+              </div>
+          </div>
           <div class="space-y-4 text-center">
-            <img class="mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64" src="/assets/martin-75c4c1880a4296644c25093d521b5591a998fc856426ac08e1be1d788e910030.jpg">
-              <%#= image_tag("martin", class: "mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64") %>
-              <%# <img class="mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64" src="https://tailus.io/sources/blocks/classic/preview/images/man.jpg" alt="man" loading="lazy" width="1000" height="667" /> %>
+              <%# <img class="mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64" src="/assets/martin-75c4c1880a4296644c25093d521b5591a998fc856426ac08e1be1d788e910030.jpg"> %>
+              <%# <img class="mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"> %>
+
+              <%= image_tag("martin.jpg", class: "mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64") %>
               <div>
                   <h4 class="text-2xl">Martin</h4>
                   <span class="block text-sm text-gray-500">CEO-Founder</span>
-                </div>
               </div>
-              <div class="space-y-4 text-center">
-                <img class="mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64" src="/assets/sama-f28a19d79455723e434ad57328bd6fb10884edb5d88635f8999d3bf2e75038c0.jpg">
-                <%#= image_tag("sama", class: "mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64") %>
-              <div>
-                <h4 class="text-2xl">Samuel</h4>
-                <span class="block text-sm text-gray-500">Informaticien</span>
-              </div>
-            </div>
-        </div>
-      </div>
-  </div>
+          </div>
+          <div class="space-y-4 text-center">
+              <%# <img class="mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"> %>
 
-    <section class="snap-start bg-gold-900 w-screen grid place-items-center h-screen" id="fifth">
+              <%= image_tag("benoit.jpg", class: "mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64") %>
+              <div>
+                  <h4 class="text-2xl">Benoit</h4>
+                  <span class="block text-sm text-gray-500">Pôle création</span>
+              </div>
+          </div>
+          <div class="space-y-4 text-center">
+              <%= image_tag("elvire.jpg", class: "mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64") %>
+              <%# <img class="mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"> %>
+              <div>
+                  <h4 class="text-2xl">Elvire</h4>
+                  <span class="block text-sm text-gray-500">Pole marketing/communication</span>
+              </div>
+          </div>
+          <div class="space-y-4 text-center">
+              <%= image_tag("clara.jpg", class: "mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64") %>
+              <%# <img class="mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"> %>
+
+              <div>
+                  <h4 class="text-2xl">Clara</h4>
+                  <span class="block text-sm text-gray-500">Pôle événementiel</span>
+              </div>
+          </div>
+          <div class="space-y-4 text-center">
+              <%= image_tag("sama", class: "mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64") %>
+              <%# <img class="mx-auto h-32 w-32 rounded-xl object-cover md:h-64 md:w-48 lg:h-64 lg:w-64" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"> %>
+
+              <div>
+                  <h4 class="text-2xl">Samuel</h4>
+                  <span class="block text-sm text-gray-500">Informaticien</span>
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="snap-start bg-black w-screen grid place-items-center h-screen" id="fifth">
       <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-        <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">Suivez nos reseaux sociaux</h2>
-        <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-2 dark:text-gray-400">
+        <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-white md:text-4xl">Retrouvez-nous sur nos réseaux. </h2>
+        <div class="grid grid-cols-2 gap-8 text-white sm:gap-12 md:grid-cols-2">
           <!-- Facebook -->
           <a href="https://www.facebook.com/teddyfearofficial" data-mdb-ripple="true" data-mdb-ripple-color="light" class="flex items-center justify-center mb-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out" style="background-color: #1877f2;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-4 h-4">
@@ -163,7 +356,7 @@
           </a>
 
           <!-- Twitter -->
-        <a href="https://instagram.com/teddyfearofficial?igshid=YmMyMTA2M2Y=" data-mdb-ripple="true" data-mdb-ripple-color="light" class="flex items-center justify-center mb-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out" style="background-color: #1da1f2;">
+        <a href="https://twitter.com/TeddyFear_off?t=6amIvPUEtuZd_bDPqPIrbg&s=09" data-mdb-ripple="true" data-mdb-ripple-color="light" class="flex items-center justify-center mb-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out" style="background-color: #1da1f2;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4">
             <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
           </svg>
@@ -171,12 +364,15 @@
         </a>
         </div>
     </div>
-    <img class=" scale-50 md:scale-50 md:hidden" src="/assets/TAGLINE-78b945e83e46c1eb5cf24653605d1e2e6046121d1d315d7c3a3a15e519bd8d3c.png">
+    
+    <%# <img class=" scale-50 md:scale-50 md:hidden" src="/assets/TAGLINE-78b945e83e46c1eb5cf24653605d1e2e6046121d1d315d7c3a3a15e519bd8d3c.png"> %>
     <%#= image_tag("TAGLINE", class: " scale-50 md:scale-50 md:hidden") %>
-</section>
-
-
-
+    </section>
 </div>
 
-<%= render 'layouts/prevention'%>
+
+<%# France bleu isere %>
+<%# https://www.instagram.com/p/CpdHw_-M7ZP/?igshid=MDJmNzVkMjY%3D %>
+
+<%# le dauphine %>
+<%# https://www.ledauphine.com/economie/2023/02/22/isere-a-22-ans-deux-grenoblois-lancent-une-nouvelle-boisson %>
