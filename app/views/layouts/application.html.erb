@@ -18,8 +18,9 @@
     <%= turbo_frame_tag :age_verification, src: age_gates_path if session[:age_verification].nil? || session[:age_verification] == false %>
     <main>
       <%= render 'layouts/navbar' %>
-        <%= yield %>
-      <%= render 'layouts/footer' %>
+      <%= yield %>
+      <%#= render 'layouts/footer' %>
+      <%= render 'layouts/prevention'%>
     </main>
   </body>
 </html>

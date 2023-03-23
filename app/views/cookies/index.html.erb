@@ -74,7 +74,7 @@
             </div>
 
             <div class="bg-black px-4 py-3 sm:px-6">
-                <%= link_to "En savoir plus", cookies_policy_path, class: "inline-flex w-full m-2 justify-center rounded-md border border-transparent bg-green-500 px-4 py-2 text-base text-white shadow-sm hover:bg-green-700" %>
+                <%= link_to "En savoir plus", cookies_policy_path, class: "inline-flex w-full m-2 justify-center text-green-400" %>
                 <%= button_to "Accepter", cookie_consent_path(consent: true), method: :post, class: "inline-flex w-full m-2 justify-center rounded-md border border-transparent bg-green-500 px-4 py-2 text-base text-white shadow-sm hover:bg-green-700"%>
                 <%= button_to "Refuser", cookie_consent_path(consent: false), method: :post, class: "inline-flex w-full  m-2 justify-center rounded-md border border-transparent bg-red-500 px-4 py-2 text-base text-white shadow-sm hover:bg-red-700"%>
             </div>

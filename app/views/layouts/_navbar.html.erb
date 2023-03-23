@@ -1,11 +1,12 @@
 <nav data-controller= "navbar" 
-class="fixed w-screen  backdrop-filter backdrop-blur-lg bg-opacity-90 bg-black border-2 border-yellow-300 rounded z-30">
+class="fixed w-screen backdrop-filter backdrop-blur-lg bg-opacity-90 bg-black  z-30"
+>
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-16 items-center justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
         <!-- Mobile menu button-->
         <button type="button" 
-        class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" 
+        class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset " 
         aria-controls="mobile-menu"
         aria-expanded="false"
         data-action="click->navbar#toggleMobile"
@@ -75,13 +76,15 @@ class="fixed w-screen  backdrop-filter backdrop-blur-lg bg-opacity-90 bg-black b
         -->
         <div class="relative ml-3">
           <div>
-            <button type="button" 
-            class="flex rounded-full bg-gray-800 text-sm hover:outline-none hover:ring-2 hover:ring-white hover:ring-offset-2 hover:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true"
+            <a type="button"
+            class="flex rounded-full bg-gray-800 text-sm hover:outline-none hover:ring-2 hover:ring-white hover:ring-offset-2 hover:ring-offset-gray-800" 
+            id="user-menu-button" aria-expanded="false" aria-haspopup="true"
             data-action="click->navbar#togglePop"
             >
               <span class="sr-only">Open user menu</span>
-              <i class="h-8 w-8 rounded-full fa-solid fa-user"></i>
-            </button>
+
+              <p class="h-8 w-8 rounded-full text-2xl text-center ">&#128100;</p>
+            </a>
           </div>
 
           <!--
