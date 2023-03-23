@@ -1,5 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
 import { toggle } from "el-transition";
+import ScrollTo from 'stimulus-scroll-to'
 
 // Connects to data-controller="navbar"
 export default class extends Controller {

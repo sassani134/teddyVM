@@ -27,8 +27,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        'teddybg': "url('TeddyBG.png')",
-        'teddybg1': "url('TeddyBG1.png')",
+        'teddybg': "url('2')",
       }
     },
   },
