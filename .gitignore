@@ -33,3 +33,4 @@
 /app/assets/builds/*
 !/app/assets/builds/.keep
 app/assets/images/1.mp4
+tips.txt
