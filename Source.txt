@@ -59,3 +59,5 @@ https://tailwindcss.com/docs/scroll-padding
 
 Iphone 10
 responsiveness
+
+https://www.deployhq.com/git/faqs/removing-large-files-from-git-history
