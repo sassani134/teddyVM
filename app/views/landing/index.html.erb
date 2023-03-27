@@ -32,7 +32,7 @@
                   </div>
                   <div class="md:mb-12 lg:mb-0" id="theVideo">
                       <%#= video_tag("tf.mp4", class:"md:w-full rounded-lg shadow-lg md:-translate-y-52 md:scale-75 md:-z-10" ,autoplay: "true", muted: "true", loop: "true", playsinline: true)%>
-                      <video class= "md:w-full rounded-lg shadow-lg md:-translate-y-52 md:scale-75 md:-z-10" autoplay muted loop playsinline>
+                      <video class= "md:w-full rounded-lg shadow-lg md:-translate-y-52 md:scale-75 md:-z-10"   autoplay="true" muted="true" loop="true" preload="metadata" controls="true">
                         <source src="<%=video_path "tf.mp4" %>" type="video/mp4" />
                       </video>
                   </div>
@@ -42,6 +42,7 @@
     </section>
 
     <section data-scroll-reveal-target="item" class="reveal bg-black w-screen h-screen flex items-center justify-center text-white" id="second">
+      <br/>
       <div class="gap-16 items-center py-8 px-4 mx-auto lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Qu'est que <span class="text-gold-500">TEDDY FEAR</span> ?</h2>
