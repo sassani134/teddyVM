@@ -31,10 +31,12 @@
                       </div>
                   </div>
                   <div class="md:mb-12 lg:mb-0" id="theVideo">
-                      <%#= video_tag("tf.mp4", class:"md:w-full rounded-lg shadow-lg md:-translate-y-52 md:scale-75 md:-z-10" ,autoplay: "true", muted: "true", loop: "true", playsinline: true)%>
-                      <video class= "md:w-full rounded-lg shadow-lg md:-translate-y-52 md:scale-75 md:-z-10"   autoplay="true" muted="true" loop="true" preload="metadata" controls="true">
-                        <source src="<%=video_path "tf.mp4" %>" type="video/mp4" />
-                      </video>
+
+                    <%= video_tag "1tf.mp4", playinline:true, muted:true,  autoplay:true, loop:true, preload:"metadata", type:"video/mp4",
+                        class: "md:w-full rounded-lg shadow-lg md:-translate-y-52 md:scale-75 md:-z-10"
+                    %>
+
+
                   </div>
               </div>
           </div>
