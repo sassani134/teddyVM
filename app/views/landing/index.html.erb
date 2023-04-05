@@ -12,27 +12,18 @@
                           <h1 class="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tight mb-12 text-gold-500">TEDDY FEAR <br />
                               <span class="text-white">Drink different.</span>
                           </h1>
-                          <a 
-                          class="inline-block px-7 py-3 mb-2 md:mb-0 md:mr-2 bg-gold-400 text-black font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-gold-700 
-                          hover:shadow-lg hover:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gold-800 active:shadow-lg transition duration-150 ease-in-out"
-                          href="#!" 
-                          role="button">
-                            Essayez le !
-                          </a>
-                          <a 
-                          class="inline-block px-7 py-3 bg-transparent text-blue-600 font-medium text-sm leading-snug uppercase rounded hover:text-blue-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none 
-                          focus:ring-0 active:bg-gray-200 transition duration-150 ease-in-out" 
-                          data-mdb-ripple="true" 
-                          data-mdb-ripple-color="light" 
-                          href="#!" 
-                          role="button">
-                              en Savoir Plus
-                          </a>
+
+                        <%= link_to "Essayez le !", comming_index_path, class: "inline-block px-7 py-3 mb-2 md:mb-0 md:mr-2 bg-gold-400 text-black font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-gold-700
+                          hover:shadow-lg hover:text-white focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gold-800 active:shadow-lg transition duration-150 ease-in-out" %>
+
+                        <%= link_to "en Savoir Plus", comming_index_path, class:"inline-block px-7 py-3 bg-transparent text-blue-600 font-medium text-sm leading-snug uppercase rounded hover:text-blue-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none
+                          focus:ring-0 active:bg-gray-200 transition duration-150 ease-in-out"  %>
+
                       </div>
                   </div>
                   <div class="md:mb-12 lg:mb-0" id="theVideo">
 
-                    <%= video_tag "1tf.mp4", playinline:true, muted:true,  autoplay:true, loop:true, preload:"metadata", type:"video/mp4",
+                    <%= video_tag "1tf.mp4", playsinline:true, muted:true, autoplay:true, loop:true, controls: true, preload:"metadata", type:"video/mp4",
                         class: "md:w-full rounded-lg shadow-lg md:-translate-y-52 md:scale-75 md:-z-10"
                     %>
 
@@ -72,8 +63,7 @@
 
     <div class="flex flex-wrap items-center">
       <div class="grow-0 shrink-0 basis-auto w-full lg:w-5/12 mb-12 lg:mb-0 md:px-6">
-        <div class="relative overflow-hidden bg-no-repeat bg-cover rounded-lg shadow-lg " data-mdb-ripple="true"
-          data-mdb-ripple-color="light" style="background-position: 50%">
+        <div class="relative overflow-hidden bg-no-repeat bg-cover rounded-lg shadow-lg " style="background-position: 50%">
           <!--<img src="https://mdbootstrap.com/img/new/textures/full/98.jpg" class="w-full" />-->
           <%=image_tag("https://images.unsplash.com/photo-1623274545361-63e9d95e4643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80", alt: "tFearPub", class: "w-full") %>
             <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
