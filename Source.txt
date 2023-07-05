@@ -15,7 +15,7 @@ https://tailwindcss.com/docs/adding-custom-styles#adding-base-styles
 --threeJs custom model
 https://threejs.org/docs/#manual/en/introduction/Loading-3D-models
 
---transition menu modals 
+--transition menu modals
 https://boringrails.com/articles/tailwind-style-css-transitions-with-stimulusjs/?utm_source=pocket_reader
 https://www.bearer.com/blog/how-to-build-modals-with-hotwire-turbo-frames-stimulusjs
 
@@ -52,7 +52,7 @@ https://fontawesome.com/docs/web/use-with/ruby-on-rails
 --rails favicons
 https://realfavicongenerator.net/favicon_result?file_id=p1golm45nb9113insd9ed02ce6&technology=ror#.Y-IljhyZNhE
 
---snap scroll with a navbar 
+--snap scroll with a navbar
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scroll_Snap/Basic_concepts
 https://stackoverflow.com/questions/71645872/css-scroll-snapping-sections-in-fixed-navbar
 https://tailwindcss.com/docs/scroll-padding
@@ -67,3 +67,5 @@ https://www.deployhq.com/git/faqs/removing-large-files-from-git-history
          (https://github.com/newren/git-filter-repo/) instead.  See the
          filter-branch manual page for more details; to squelch this warning,
          Test
+
+https://blog.corsego.com/fontawesome-importmaps-rails7
