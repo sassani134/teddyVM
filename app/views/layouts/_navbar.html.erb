@@ -1,12 +1,12 @@
-<nav data-controller= "navbar" 
+<nav data-controller= "navbar"
 class="fixed w-screen backdrop-filter backdrop-blur-lg bg-opacity-90 bg-black  z-30"
 >
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-16 items-center justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
         <!-- Mobile menu button-->
-        <button type="button" 
-        class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset " 
+        <button type="button"
+        class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset "
         aria-controls="mobile-menu"
         aria-expanded="false"
         data-action="click->navbar#toggleMobile"
@@ -55,29 +55,29 @@ class="fixed w-screen backdrop-filter backdrop-blur-lg bg-opacity-90 bg-black  z
         </div>
       </div>
       <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-        <button type="button" 
+        <button type="button"
         class="hidden rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white hover:outline-none hover:ring-2 hover:ring-white hover:ring-offset-2 hover:ring-offset-gray-800">
           <span class="sr-only">View notifications</span>
           <!-- Heroicon name: outline/bell -->
-          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" 
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
           fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
           </svg>
         </button>
 
-        <!-- Profile dropdown 
+        <!-- Profile dropdown
         data-action="slide-over#show"
         -->
         <div class="relative ml-3">
           <div>
             <a type="button"
-            class="flex rounded-full bg-gray-800 text-sm hover:outline-none hover:ring-2 hover:ring-white hover:ring-offset-2 hover:ring-offset-gray-800" 
+            class="flex rounded-full bg-gray-800 text-sm hover:outline-none hover:ring-2 hover:ring-white hover:ring-offset-2 hover:ring-offset-gray-800"
             id="user-menu-button" aria-expanded="false" aria-haspopup="true"
             data-action="click->navbar#togglePop"
             >
               <span class="sr-only">Open user menu</span>
 
-              <p class="h-8 w-8 rounded-full text-2xl text-center ">&#128100;</p>
+              <p class="h-8 w-8 rounded-full text-2xl text-center text-white "><i class="fa-solid fa-user"></i></p>
             </a>
           </div>
 
@@ -91,7 +91,7 @@ class="fixed w-screen backdrop-filter backdrop-blur-lg bg-opacity-90 bg-black  z
               From: "transform opacity-100 scale-100"
               To: "transform opacity-0 scale-95"
           -->
-          <div data-navbar-target="pop" 
+          <div data-navbar-target="pop"
           class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
           role="menu"
           aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1"
@@ -114,7 +114,7 @@ class="fixed w-screen backdrop-filter backdrop-blur-lg bg-opacity-90 bg-black  z
 
   <!-- Mobile menu, show/hide based on menu state. -->
   <div class="sm:hidden" id="mobile-menu">
-    <div data-navbar-target="mobileMenu" 
+    <div data-navbar-target="mobileMenu"
     class="space-y-1 px-2 pt-2 pb-3 hidden"
     data-transition-enter="transition ease-out duration-100"
     data-transition-enter-start="transform opacity-0 scale-95"
@@ -145,5 +145,5 @@ class="fixed w-screen backdrop-filter backdrop-blur-lg bg-opacity-90 bg-black  z
     </div>
   </div>
 
-  
+
 </nav>
