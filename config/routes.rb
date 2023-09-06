@@ -1,8 +1,24 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+
+  root 'landing#index'
+
+
+  get 'comming/index'
+  get 'age_gates',to: 'age_gates#index'
+  post "age_gates/verification", to: "age_gates#verification", as: "age_verification"
+
+  get 'cookies', to: 'cookies#index'
+  post "cookies/consent", to: "cookies#consent", as: "cookie_consent"
+  get 'cookies/policy', to: 'cookies#policy', as: 'cookies_policy'
+
+
+  get 'landing/index'
+
   mount SolidusStripe::Engine, at: '/solidus_stripe'
-  root to: 'home#index'
+  # root to: 'home#index'
+  get 'home/index', as: "shop"
 
   devise_for(:user, {
     class_name: 'Spree::User',
@@ -73,18 +89,4 @@ Rails.application.routes.draw do
   #
   # We ask that you don't use the :as option here, as Solidus relies on it being the default of "spree"
   mount Spree::Core::Engine, at: '/'
-  # get 'comming/index'
-  # get 'age_gates',to: 'age_gates#index'
-  # post "age_gates/verification", to: "age_gates#verification", as: "age_verification"
-
-  # get 'cookies', to: 'cookies#index'
-  # post "cookies/consent", to: "cookies#consent", as: "cookie_consent"
-  # get 'cookies/policy', to: 'cookies#policy', as: 'cookies_policy'
-
-
-  # get 'landing/index'
-  # # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # # Defines the root path route ("/")
-  # root 'landing#index'
 end
