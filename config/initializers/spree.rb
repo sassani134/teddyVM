@@ -50,7 +50,7 @@ Spree.config do |config|
 end
 
 Spree::Backend::Config.configure do |config|
-  config.locale = 'en'
+  config.locale = 'fr'
 
   # Uncomment and change the following configuration if you want to add
   # a new menu item:

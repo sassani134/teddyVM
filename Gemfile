@@ -104,3 +104,9 @@ group :development, :test do
 end
 
 gem "solidus_stripe", "~> 5.a"
+
+gem 'solidus_i18n'
+gem 'rails-i18n'
+gem 'kaminari-i18n', '~> 0.5.0'
+
+gem 'routing-filter'

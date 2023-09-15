@@ -2,6 +2,11 @@
 
 Rails.application.routes.draw do
 
+  filter :locale
+
+  mount SolidusStripe::Engine, at: '/solidus_stripe'
+
+
   root 'landing#index'
 
 
@@ -16,7 +21,6 @@ Rails.application.routes.draw do
 
   get 'landing/index'
 
-  mount SolidusStripe::Engine, at: '/solidus_stripe'
   # root to: 'home#index'
   get 'home/index', as: "shop"
 
