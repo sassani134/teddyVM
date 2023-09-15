@@ -44,7 +44,7 @@ class="fixed w-screen backdrop-filter backdrop-blur-lg bg-opacity-90 bg-black  z
         </div>
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4 ">
-            <%= link_to("Boutique",comming_index_path, class: "bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium")%>
+            <%= link_to("Boutique",shop_path, class: "bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium")%>
             <%= link_to("Teddy Fear",root_path(anchor: "second"), data: {controller: "scroll-to"}, class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium")%>
             <%= link_to("C'est quoi ?",root_path(anchor:"third"), data: {controller: "scroll-to"}, class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium")%>
             <%= link_to("L'histoire",root_path(anchor:"fourth"), data: {controller: "scroll-to"}, class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium")%>
@@ -104,8 +104,8 @@ class="fixed w-screen backdrop-filter backdrop-blur-lg bg-opacity-90 bg-black  z
           >
             <!-- Active: "bg-gray-100", Not Active: "" -->
             <!-- a modifié pour la co-->
-            <%= link_to("Connexion",comming_index_path, class: "block px-4 py-2 text-sm text-gray-700", role: "menuitem", tabindex: "-1", id: "user-menu-item-0")%>
-            <%= link_to("Créer un compte",comming_index_path, class: "block px-4 py-2 text-sm text-gray-700", role: "menuitem", tabindex: "-1", id: "user-menu-item-1")%>
+            <%= link_to("Connexion",login_path, class: "block px-4 py-2 text-sm text-gray-700", role: "menuitem", tabindex: "-1", id: "user-menu-item-0")%>
+            <%= link_to("Créer un compte",signup_path, class: "block px-4 py-2 text-sm text-gray-700", role: "menuitem", tabindex: "-1", id: "user-menu-item-1")%>
           </div>
         </div>
       </div>
