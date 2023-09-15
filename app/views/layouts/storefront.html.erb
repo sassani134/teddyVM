@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title><%= title %></title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%== meta_data_tags %>
     <%= canonical_tag(current_store.url) %>
@@ -10,13 +11,18 @@
 
     <%= javascript_include_tag 'solidus_starter_frontend' %>
     <%= stylesheet_link_tag 'solidus_starter_frontend', media: 'screen' %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
 
     <%= javascript_importmap_tags %>
 
-    <%= favicon_link_tag 'favicon.ico' %>
+    <%= favicon_link_tag 'https://teddyfear.fra1.digitaloceanspaces.com/logoGold.ico' %>
     <%= yield :head %>
   </head>
-  <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-turbo="false">
+  <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-turbo="true">
+    <%= turbo_frame_tag :cookie_consent, src: cookies_path if session[:cookie_consent].nil? || session[:cookie_consent] == false%>
+    <%= turbo_frame_tag :age_verification, src: age_gates_path if session[:age_verification].nil? || session[:age_verification] == false%>
     <%= render 'layouts/header', taxons: @taxons, taxon: @taxon %>
     <%= flash_messages %>
     <%= render BreadcrumbsComponent.new(@taxon) %>
