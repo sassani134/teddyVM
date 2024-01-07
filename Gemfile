@@ -77,4 +77,9 @@ group :test do
   gem 'webdrivers'
 end
 
-gem "solidus", "~> 4.1"
+
+group :test do
+end
+
+group :development, :test do
+end
